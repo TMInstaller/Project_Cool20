@@ -1,0 +1,191 @@
+@charset "utf-8";
+
+
+/* 몸통 */
+div {
+    display: block;
+}
+.content_purchase{
+    position: relative;
+    margin: 0 auto;
+}
+.img {
+	width:600px;
+	float:left;
+	margin-top: 80px;
+	margin-bottom: 100px;
+}
+
+
+/* 상품 */
+.form {
+	float :left;
+}
+.infoArea {
+    float: right;
+    width: 450px;
+    margin-right: 100px;
+  	margin-top: 80px;
+}
+.infoArea {
+    border-top: 2px solid #575757;
+}
+.h2 {
+    padding: 4px 15px;
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 1.6;
+    color: #2e2e2e;
+    margin-top: 50px;
+}
+.line {
+    border-bottom: 1px solid #e7e7e7;
+    font-size: 11px;
+    color: #727272;
+    vertical-align: middle;
+}
+
+
+
+/* 옵션 */
+table {
+    width: 100%;
+    border: 0;
+    border-spacing: 0;
+    border-collapse: collapse;
+    font-size: 12px;
+    margin: 8px;
+}
+th {
+    line-height: 1.6;
+    color: #353535;
+    width: 120px;
+    padding: 8px 4px 8px 8px;
+    text-align: left;
+    vertical-align: middle;
+}
+
+th, td {
+    border: 0;
+    vertical-align: top;
+}
+.content_purchase td {
+    vertical-align: middle;
+}
+.infoArea ul.shoppting.option > li:first-child {
+    border-top: 1px solid #e7e7e7;
+    padding-top: 10px;
+    width : 450px;
+}
+.shoppting.option li > ul {
+    display: table;
+    width: 100%;
+}
+.shoppting.option li.title {
+    display: table-cell;
+    width: 120px;
+    padding: 8px 4px 5px 8px;
+    vertical-align: middle;
+    font-size: 14px;
+    line-height: 1.6;
+    font-weight: normal;
+    color: #353535;
+    text-align: left;
+}
+.shoppting.option li.title i.so {
+    font-size: 6px;
+    color: #aaa;
+    margin-right: 7px;
+}
+
+.so {
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+select {
+    border: 1px solid #e7e7e7;
+}
+.infoArea select {
+    width: 100%;
+    height: 36px;
+    font-size: 14px;
+    color: #353535;
+    margin-top:10px;
+}
+.shoppting.option li.content {
+    padding: 5px 10px 5px 0;
+    vertical-align: middle;
+}
+.infoArea ul.shoppting.option > li:last-child {
+    padding-bottom: 10px;
+    width: 450px;
+}
+
+
+
+/* 총합 */
+.totalPrice {
+    font-size: 16px;
+    padding: 16px 6px 10px;
+    color: #353535;
+    vertical-align: middle;
+    text-align: right;
+}
+strong {
+    font-weight: bold;
+}
+.totalPrice .total em {
+    font-style: normal;
+    font-size: 30px;
+}
+.totalPrice .total {
+    color: #222;
+}
+
+
+/* 버튼 */
+.action_button_1 {
+    margin-left: 70px;
+    padding-bottom: 8px;
+    padding: 13px 0;
+    text-align: center;    
+}
+.buy.wrap {
+    float: right;
+    width: 37%;
+}
+.button {
+    display: block;
+    padding: 0;
+    border-radius: 0;
+    font-size: 14px;
+    height: 48px;
+    line-height: 48px;
+    margin-left: 5px;
+}
+
+.button.buy {
+    border: 2px solid #4a4a4a;
+    background: #4b4b4b;
+    color: #fff;
+    letter-spacing: 2px;
+    font-weight: bold;
+}
+.button {
+    text-decoration: none;
+}
+.cart.wrap {
+    float: right;
+    width: 50%;
+    margin-left: 30px;
+}
+.button.cart {
+    border: 2px solid #e7e7e7;
+    color: #6f6f6f;
+    letter-spacing: 1px;
+}
+

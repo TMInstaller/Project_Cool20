@@ -1,0 +1,29 @@
+@charset "utf-8";
+
+body {
+	width:100%;
+	font-family:"나눔고딕", "맑은 고딕", "돋움", Dotum, Verdana, Tahoma;
+	font-size: 14pt;
+	line-height:170%
+	color #333;	
+}
+
+/*중앙 메인이미지*/
+
+.content {
+	margin-top: 3%;
+	width : 100%;
+	position:relative;
+}
+.content .prolist {
+	width : 360px;
+	float : left;
+	margin-left:70px;
+	margin-top:40px;
+}
+
+#number{
+	position:absolute;
+	text-align:center;
+	width: 100%;
+}

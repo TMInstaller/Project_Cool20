@@ -1,0 +1,72 @@
+@charset "utf-8";
+
+/*중앙레이아웃*/
+
+.page_content {
+	clear: both;
+	float: left;
+	width:976px;
+}
+
+.page_content:after {
+	content:'';
+	display:block;
+	clear:both;
+}
+
+/*오른쪽 내용*/
+
+.page_content .rightcon {
+	float: left;
+	margin-top: 20px;
+	width: 1000px;
+}
+
+
+#registerform {
+	border-top-width: 6px;
+	border-bottom-width: 5px;
+	border-top-style: solid;
+	border-bottom-style: solid;
+	border-top-color: #dddddd;
+	border-bottom-color: #dddddd;
+	margin-top:50px;
+	margin-bottom:50px;
+	margin-left: 300px;
+}
+
+#registerform th {
+	height: 25px;
+	padding-top: 5px;
+	padding-left: 25px;
+	width: 100px;
+	text-align: left;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #dddddd;
+	background-color: #efefef;
+}
+#registerform tr td {
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #dddddd;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	padding-left: 10px;
+	text-align: left;
+}
+
+.page_content .tablestyle {
+	float: left;
+	width: 100px;
+	text-align: center;	
+	padding-top: 20px;
+	padding-bottom: 20px;	
+}
+
+#registerform tr .btnstyle {
+	text-align: center;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+

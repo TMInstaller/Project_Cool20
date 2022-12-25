@@ -1,0 +1,445 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css?family=Nanum+Gothic:400,700,800');
+body {font-family: 'Nanum Gothic';}
+#wrap {
+   height: auto;
+   width: 80%;
+   margin-left: 10%;
+}
+
+/* Page Header */
+#page_header {
+   float: left;
+   height: 145px;
+   width: 100%;
+}
+#header_menu{
+   border-bottom: 1px solid rgb(182, 182, 182);
+   width:100%;
+}
+
+
+#header_menu_right{
+   width:50%;
+   float:right;
+   height: 30px;
+   margin-bottom: 5px;
+   text-align: right;
+}
+
+#header_menu_left {
+   width: 50%;
+   height: 30px;
+   margin-bottom: 5px;
+   text-align: left;
+}
+
+a{
+   text-decoration: none;
+   color: rgb(114, 114, 114);
+}
+a:hover {
+   color: rgb(153, 0, 0);
+}
+
+/* Search */
+#search {
+   z-index: -1;
+   float: left;
+   height: 97px;
+   width: 30%;
+   margin-top: 80px;
+   vertical-align: bottom;
+}
+
+
+/* Logo */
+#page_header_logo {
+   margin-top: 10px;
+   float: left;
+   height: 97px;
+   width: 40%;
+   justify-content: center;
+}
+
+.logo_top {
+   height: 97px;
+   width: 167px;
+   text-align: center;
+   margin: auto;
+}
+
+
+/* MenuBar */
+#menubar1 {
+   text-align: center;
+   margin-bottom: 10px;
+   width: 100%;
+   display: flex;
+   border-bottom: 1px solid rgb(182, 182, 182);
+   justify-content: space-between;
+}
+
+/* 드롭다운 메뉴 */
+
+.dropdown-content {
+   display: none;
+   position: absolute;
+   z-index: 10;
+   text-align: center;
+   /*다른 요소들보다 앞에 배치*/
+}
+
+.dropdown-content a {
+   display: block;
+}
+
+.dropdown:hover .dropdown-content {
+   border: 1px solid wheat;
+   background-color: white;
+   display: block;
+   margin-top: 2px;
+   margin-left: 1%;
+   padding: 25px;
+}
+/* 드롭다운 메뉴 끝 */
+
+#menubar1 .search{
+   display:inline-block;
+}
+
+/* 텍스트 슬라이드 */
+.animated-text {
+   color: rgb(0, 0, 0);
+   padding: 0 40px;
+   height: 30px;
+   overflow: hidden;
+}
+
+.line {
+   text-transform: uppercase;
+   text-align: center;
+   font-size: 1vw;
+   line-height: 30px;
+}
+
+.line:first-child {
+   animation: anim 12s infinite;
+}
+
+@keyframes anim {
+   0% {
+      margin-top: 0;
+   }
+
+   16% {
+      margin-top: -30px;
+   }
+
+   33% {
+      margin-top: -60px;
+   }
+
+   50% {
+      margin-top: -90px;
+   }
+
+   66% {
+      margin-top: -60px;
+   }
+
+   82% {
+      margin-top: -30px;
+   }
+
+   100% {
+      margin-top: 0;
+   }
+}
+/* 텍스트 슬라이드 끝 */
+
+#menubar2 {
+   width: 100%;
+   text-align: center;
+}
+
+
+
+/*
+#menubar2 #menubar2_menu1 {
+   width: fit-content;
+   margin-right: 100px;
+   font-size: 1.5vw;
+}
+
+#menubar2 #menubar2_menu2 {
+   width: fit-content;
+   margin-right: 100px;
+   font-size: 1.5vw;
+}
+
+#menubar2 #menubar2_menu3 {
+   width: fit-content;
+   font-size: 1.5vw;
+}
+
+a {
+   text-decoration-line: none;
+   color: black;
+}
+
+a:hover{
+   color: blue;
+}
+*/
+/* 중앙정렬 예정
+.dropdownbtn{
+   
+}
+*/
+
+
+/* Page Content */
+#page_content {
+   text-align: center;
+   float: left;
+   width: 100%;
+}
+
+.nav {
+   width: 100%;
+   height: 34px;
+   float: right;
+   padding: 0px;
+   margin-top: 15px;
+   margin-right: 0px;
+   margin-bottom: 0px;
+   margin-left: 0px;
+}
+
+.nav ul {
+   list-style-position: inside;
+   list-style-type: none;
+   margin: 0px;
+   /*전체 내부여백 삭제*/
+   padding: 0px;
+   /*버튼앞 이미지 여백삭제*/
+}
+
+.nav ul li {
+   float: right;
+   /*버튼 가로정렬*/
+   width: 97px;
+}
+
+ul {
+   list-style-type: none;
+   margin: 0;
+   padding: 0;
+   width: 200px;
+}
+
+li a {
+   display: block;
+   color: #000;
+   padding: 8px 16px;
+   text-decoration: none;
+}
+
+/* Content */
+#content {
+   float: left;
+   width: 80%;
+}
+
+/* Content center Image Slide */
+@import url(https://fonts.googleapis.com/css?family=Varela+Round);
+
+.slides {
+   padding: 0;
+   width: 100%;
+   height: 600px;
+   display: block;
+   margin: 0 auto;
+   position: relative;
+}
+
+.slides * {
+   user-select: none;
+   -ms-user-select: none;
+   -moz-user-select: none;
+   -khtml-user-select: none;
+   -webkit-user-select: none;
+   -webkit-touch-callout: none;
+}
+
+.slides input {
+   display: none;
+}
+
+.slide-container {
+   display: block;
+}
+
+.slide {
+   top: 0;
+   opacity: 0;
+   width: 100%;
+   height: 100%;
+   display: block;
+   position: absolute;
+
+   transform: scale(0);
+
+   transition: all .7s ease-in-out;
+}
+
+.slide img {
+   width: 100%;
+   height: 600px;
+}
+
+
+.nav label {
+   width: 200px;
+   height: 100%;
+   display: none;
+   position: absolute;
+
+   opacity: 0;
+   z-index: 9;
+   cursor: pointer;
+
+   transition: opacity .2s;
+
+   color: #FFF;
+   font-size: 156pt;
+   text-align: center;
+   line-height: 380px;
+   font-family: "Varela Round", sans-serif;
+   background-color: rgba(255, 255, 255, .3);
+   text-shadow: 0px 0px 15px rgb(119, 119, 119);
+}
+
+.slide:hover+.nav label {
+   opacity: 0.5;
+}
+
+.nav label:hover {
+   opacity: 1;
+}
+
+.nav .prev {
+   top: 0;
+   left: 0;
+}
+
+.nav .next {
+   top: 0;
+   right: 0;
+}
+
+input:checked+.slide-container .slide {
+   opacity: 1;
+   transform: scale(1);
+   transition: opacity 0.5s ease-in-out;
+}
+
+input:checked+.slide-container .nav label {
+   display: block;
+}
+
+.nav-dots {
+   width: 100%;
+   bottom: 9px;
+   height: 11px;
+   display: block;
+   position: absolute;
+   text-align: center;
+}
+
+.nav-dots .nav-dot {
+   top: -5px;
+   width: 11px;
+   height: 11px;
+   margin: 0 4px;
+   position: relative;
+   border-radius: 100%;
+   display: inline-block;
+   background-color: rgba(0, 0, 0, 0.6);
+}
+
+.nav-dots .nav-dot:hover {
+   cursor: pointer;
+   background-color: rgba(0, 0, 0, 0.8);
+}
+
+input#img-1:checked~.nav-dots label#img-dot-1,
+input#img-2:checked~.nav-dots label#img-dot-2,
+input#img-3:checked~.nav-dots label#img-dot-3,
+input#img-4:checked~.nav-dots label#img-dot-4,
+input#img-5:checked~.nav-dots label#img-dot-5,
+input#img-6:checked~.nav-dots label#img-dot-6 {
+   background: rgba(0, 0, 0, 0.8);
+}
+
+/* Footer */
+#page_footer {
+   float: left;
+   height: auto;
+   width: 100%;
+   color: rgba(9, 10, 10, 0.404);
+   font-size: small;
+}
+
+#page_footer #page_footer_left {
+   border: 1px;
+   float: left;
+   width: 30%;
+   padding: 10px;
+}
+
+#page_footer #page_footer_lcenter {
+   border: 1px;
+   float: left;
+   width: 15%;
+   padding: 10px;
+}
+
+#page_footer #page_footer_lcenter p {
+   color: black;
+}
+
+#page_footer #page_footer_rcenter {
+   border: 1px;
+   float: left;
+   width: 15%;
+   padding: 10px;
+}
+
+#page_footer #page_footer_rcenter p {
+   color: black;
+}
+
+#page_footer #page_footer_right {
+   border: 1px;
+   float: left;
+   width: 30%;
+   padding: 10px;
+}
+
+#page_footer #page_footer_right p {
+   color: black;
+}
+
+/* sub1_login.html 로그인 */
+#page_joinform{
+   border-top: 1px solid gray;
+   width: 100%;
+   height: 50%;
+
+}
+/* sub2_join.html 로그인 */
+/* sub3_cloth.html 로그인 */
+/* sub4_pants.html 로그인 */
+/* sub5_hat.html 로그인 */
